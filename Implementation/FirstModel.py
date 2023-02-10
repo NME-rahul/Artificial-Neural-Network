@@ -15,11 +15,11 @@ where y: output
                                             
 -> here the error is 3 but it Error has to be 0 or near 0 to do this we have to adjust the weight.
 
--> simplest way to get weight. adjustment is w = y/x
+-> simplest way to get weight is w = y/x
 
       weight
-1       2
-2       1.5
+1       2.00
+2       1.50
 3       1.28
 
 -> weight is different for different sample inputs to overcome this problem a new variable is itroduced id called bias.
@@ -28,6 +28,8 @@ where y: output
 -> function for multiple inputs is y = W1X1 + W2X2 + .... + WnXn + b
 -> we will adjust the value of weights corresponding to the inputs in training phase.
 -> b(bias) is a constant value for a neuron.
+
+->
 '''
 
 import numpy

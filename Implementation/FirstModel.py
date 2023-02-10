@@ -73,7 +73,7 @@ err = error(predicted, real)
 
 for i in range(int(input('Enter epoches: '))):
       g1 = error_prediction_deriv(predicted, real)
-      g2 = prediction_sop_derv(sop)
+      g2 = prediction_sop_derv(y)
       g3 = sop_w_deriv(x)
 
       grad = g1 * g2 *g3

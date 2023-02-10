@@ -21,7 +21,7 @@ public:
   long error(long predicted){
     return pow((predicted - real), 2);
   }
-  long sigmoid(long sop){
+  long sigmoid(){
     return 1.0 / ( 1 + exp(-1 * sop));
   }
   long error_prediction_deriv(long predicted){

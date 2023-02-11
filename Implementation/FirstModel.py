@@ -37,7 +37,7 @@ SOP = XW
  '''
 
 
-import numpy
+import numpy as np
 
 def sigmoid(sop):
       return 1.0 / (1 + numpy.exp(-1 * sop))

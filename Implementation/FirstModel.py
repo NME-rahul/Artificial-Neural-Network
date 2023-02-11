@@ -117,5 +117,4 @@ for i in range(int(input('Enter epoches: '))):
 
       grad = g1 * g2 *g3
       
-
       w  = update_w(w, grad, learning_rate)

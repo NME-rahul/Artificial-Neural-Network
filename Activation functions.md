@@ -100,7 +100,7 @@ We do not sually use the sigmoid function in the hidden layer beacause of the fo
 * This is the only function that is considered as a linear function when we talk about activation functions.
 * This function outputs the input value as it is. No changes are made to the input.
 
-## Usage:
+### Usage:
 * This function is only used in the output layer of a neural network model that saves a regression problem.
 
 ![Identity activation function](https://miro.medium.com/v2/resize:fit:1212/format:webp/1*h_-X4Ggt_YEWD58ha6x23w.png)

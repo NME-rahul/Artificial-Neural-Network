@@ -56,3 +56,94 @@ We do not sually use the sigmoid function in the hidden layer beacause of the fo
 ### Usage:
 * We must use the softmax function in the output layer of a multiclass classification problem.
 * we never use the softmax function in the hidden layers.
+
+## 4. Leaky ReLU activation function
+
+* The leaky ReLU activation function is a modifies version of the default ReLU function.
+* Like the ReLU activation function, this function does have the vanishin gradient problem.
+* IF the input is 0 or greater then 0, the leaky ReLU function outputs the input as it is like the default ReLU function deos. However, if the input is less then 0, the leaky ReLU function outputs a small negative value defined by 𝜶z(where 𝜶 is a small constant value, usually 0..1 and z is the input value).
+* It don not have any linear component with zero derivatives(slopes) therefore, it can avoid dying ReLU problem.
+* The learning process with leaky ReLU is faster then the defaut ReLU.
+
+### Usage:
+* The same usage of the ReLU function is also valid for the leaky ReLU function.
+
+![Leaky ReLU activation function](https://miro.medium.com/v2/resize:fit:1200/format:webp/1*R15CMX7M8Fx_dlAuhZUlWA.png)
+
+
+## 5. Parametric ReLU(PReLU) activation function
+* This is another varient of the ReLU function.
+* This is almost similar to the leaky ReLU function. the only difference is that the value 𝜶 becomes a learnable parameter(hence the name). We set 𝜶 as a prameter for each neuron in the network. Therfore, the optimal value of 𝜶 learns form the network.
+
+## 6. ReLU6 activation function
+* The main difference between ReLU and ReLU6 is that ReLU allows very high values on the positive side while ReLU6 restricts to the value 6 on the positive side.
+* The ReLU6 function is made up of three linear components. it is a non-linear function.
+
+![ReLU6 activation function](https://miro.medium.com/v2/resize:fit:1200/format:webp/1*P5EB-6rNeucah1F5_8a3KQ.png)
+
+
+## 7. Binary step activation function
+* This function is also known as the treshold activation function. we can set any value to the threshold and here we specify the value 0.
+* If the input is greater than the threshold value, this function outputs the value 1. If the input is equal to the threshold value or less than it, this function outputs the value 0.
+* This outputs a binary value, either 0 or 1.
+* The binary step function is made up of the tow linear components. BEacuse of that, this function is a picewise linear function. In fact, the binary step function is anon-linear function.
+* THis function is not a smooth function.
+
+### Usage:
+* In Practice, we don not usually ise this function in modern neural network models.
+* owever, we can use this function to explain theortical concepts such as "firing a neuron", "inner working of a perceptron". Therfore, the step binary function is theoretically important.
+
+![Binary step activation function](https://miro.medium.com/v2/resize:fit:1200/format:webp/1*kLXCnlfmGCRrLbZ_aSV6rg.png)
+
+## 8. Identity activation function
+* This also known as the linear activation function.
+* This is the only function that is considered as a linear function when we talk about activation functions.
+* This function outputs the input value as it is. No changes are made to the input.
+
+## Usage:
+* This function is only used in the output layer of a neural network model that saves a regression problem.
+
+![Identity activation function](https://miro.medium.com/v2/resize:fit:1212/format:webp/1*h_-X4Ggt_YEWD58ha6x23w.png)
+ 
+## 9. Tanh activation function
+* The output of the tanh(tangent hyperbolic) always ranges between -1 and +1.
+* Like the sigmoid function, it has an s-shaped graph. This is also a no-linear function.
+* One advantage of using the tanh function over the sigmoid function is that the tanh function is zero centerd. This makes the optimization process much easier.
+* The tanh function has a steeper gradient than the sigmoid function has.
+
+### Usage:
+* Until recently, the tanh function was used as an activation function for the hidden laer in MLPs CNNs and RNNs.
+* However, the tanh function is stil use in RNNs.
+* Currently, we do not usually use the tanh function for the hidden layers in MLPs and CNNs. instead, we use RELU or Leaky ReLU there.
+* We never use the tanh function in the output layer.
+
+### Drawbacks:
+We don not usually use the tanh funcion in the hidden layer because of the following drawbacks.
+* The tanh has the vaishing gradient problem.
+* This funcion is computationaly expensive as e^z term is included.
+
+![Tanh activation function](https://miro.medium.com/v2/resize:fit:1198/format:webp/1*qWEluqh-LVWC0Mt8vVNn_Q.png)
+
+## 10. Swish activation function
+* This function is made of by multiplying the sigmoid function by the input z.
+* This is a non-linear function.
+* The graph is much similar to the graph of the ReLU activation function.
+* The curve is more smooth than the ReLU activation function. This ssmoothness is important when training the model. The functon converges while training.
+
+### Usage:
+* This function is only used in the hidden layers.
+* We nevern use this function in the output layer of a neural network model.
+
+### Drawbacks:
+* The main drawbacks of the swish function is that is computationally expensive as e^z term is included in the function. This can be avoided by using special called "Hard Swish".
+
+![Swish activation function](https://miro.medium.com/v2/resize:fit:1194/format:webp/1*9Fwkav2gO5kvx_OazeSx-g.png)
+
+## 11. Hard Swish(H-Swish) activation function
+* The graph is identical to the graph of the swish function.
+* This is computationally inexpensive as the sigmoid was replace with a linear analogue.
+
+### Usage:
+* The usage of Hard-Swish is similar to the usage of the Swish activation function.
+
+![Hard Swish(H-Swish) activation function](https://miro.medium.com/v2/resize:fit:1200/format:webp/1*vLyRo4eQ_evf2VslEwGttg.png)

@@ -9,5 +9,5 @@ def fit(model, input_data, epochs, num_class, learning_rate, target):
     #result['backwardPropgation'] = evaluation.backwardPropogation(model, epochs, num_class, learning_rate)
     return result
         
-def summary():
-    pass
+def summary(model):
+   print('total paramenters: ', model[0])

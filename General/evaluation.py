@@ -1,8 +1,15 @@
 import numpy as np
+imo
 import activationFunctions as af
 
 def squaredError(prediction, target):
     return np.power((prediction - target), 2)
+
+def error_prediction_deriv(prediction, target):
+    return 2 *(predicted - target)
+
+def sop_w_deriv(x):
+    return x
     
 def forwardPropgation(model, data, epochs, num_class, target):
     prediction = []; result = np.array([]); 
@@ -46,4 +53,4 @@ def update_w(weight, learning_rate, grad):
     return weight + (learning_rate * grad)
     
 def backwardPropogation(model, epochs, num_class, learning_rate):
-    return 
+    return

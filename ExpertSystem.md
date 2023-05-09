@@ -43,20 +43,20 @@ Web-based expert systems(WBESs) provide the benifits of both expert systems tecn
 
 
 ## Difference between Human and Expert System
-				Expert system										Human experts
+		    Expert system						   Human experts
 	-> It express(process) it's knowledge in the		-> A human expert expresses it knowledge in human
-	   the form of rules and heruistic values.			   in human language and in rules.
+	   the form of rules and heruistic values.	           in human language and in rules.
 	-> Expert system helps in tracing the rules that	-> It is capable of explaining reasoning line and provide
-	   produce during solving a problem.				   details.
+	   produce during solving a problem.			   details.
 	-> An expert system is avialable all the day		-> A human expert is available at only specific time
-	   you want and cheaper in compare					   and cosltly as compare.
+	   you want and cheaper in compare			   and cosltly as compare.
 	-> It might generate false output on incomplete		-> A human expert can deal with uncertain and fuzzy information.
 	   uncertain and fuzzy information.
 	-> An expert system enhance it's knowledge by		-> A human expert enhace his/her knowledge by problem
-	   adding new rules or by adjusting old ones.	       solving and years of learning and practical training.
-	-> To solve ay problem it takes very short time.    -> a human expert can take variable time based on the size of
-														   problem.
-    -> It is replaceable.								-> it is not replaceable.
+	   adding new rules or by adjusting old ones.	           solving and years of learning and practical training.
+	-> To solve ay problem it takes very short time.        -> a human expert can take variable time based on the size of
+								   problem.
+        -> It is replaceable.				        -> it is not replaceable.
 	
 
 ## Expert system and Machine learning
@@ -115,10 +115,10 @@ How it works?
 
 The CBR may employ backgorund knowledge and problem-solving stratergies to propose a feasible solution.
 
-* Application of CBR - 
--> Customer service
--> Engineering and law
--> Medical educations
+##### Application of CBR -
+1. Customer service
+2. Engineering and law
+3. Medical educations
 
 
 

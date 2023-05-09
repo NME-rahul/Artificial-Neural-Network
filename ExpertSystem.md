@@ -60,7 +60,7 @@ Web-based expert systems(WBESs) provide the benifits of both expert systems tecn
 	
 
 ## Expert system and Machine learning
-An expert system is a intelligent system that machine learning algorithms to produce results.
+An expert system is a intelligent system that uses machine learning algorithms to produce results.
 
 ## Socital impacts
 An Expert system creates substantial empact on an orgnaization that changes it's overall shape. How?, ES technology improve the productivity, effectiveness and improving quality of work life by changing the fundamental nature of orgnaizational knowledge processing. Further, it xploits technological advances to find better solutions to problems.

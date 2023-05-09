@@ -44,7 +44,7 @@ Web-based expert systems(WBESs) provide the benifits of both expert systems tecn
 
 ## Difference between Human and Expert System
 		    Expert system						   Human experts
-	-> It express(process) it's knowledge in the		-> A human expert expresses it knowledge in human
+	-> It express(process) it's knowledge in the		-> A human expert expresses it's knowledge in human
 	   the form of rules and heruistic values.	           in human language and in rules.
 	-> Expert system helps in tracing the rules that	-> It is capable of explaining reasoning line and provide
 	   produce during solving a problem.			   details.

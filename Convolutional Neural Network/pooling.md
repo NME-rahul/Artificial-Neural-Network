@@ -24,5 +24,25 @@ Th goal of the pooling is to reduce the dimensionality of the image while keepin
      <img src="https://miro.medium.com/v2/resize:fit:1400/1*WvHC5bKyrHa7Wm3ca-pXtg.gif"  height="250px" width="400px"/>
    </p>
 
+---
 
-   
+Tensorflow syntax:
+
+    model = tf.keras.model.Sequential([
+            tf.keras.layers.MaxPooling2D(pool_size, stride, padding, data_formatinput_shape)
+    ])
+
+Max pooling
+
+    pool_layer = tf.keras.layers.MaxPooling2D(pool_size, stride, padding, data_format)(input_shape)
+
+Average pooing
+
+    pool_layer = tf.keras.layers.AveragePooling2D(pool_size, stride, padding, data_format)(input_shape)
+
+
+* **pool_size**: represents the pooling filter dimension, eg. (2,2).
+* **stride**: specify the movement per steps of the pooling filter, eg. (1, 2) in (height, width) format, by default (1, 1).
+* **padding**: "valid" for no padding or "same" for zero padding.
+* **data_format**: specify the output format of the layer, eg. (batch, height, width, channels) or batch, channels, height, width)
+* **input_shape**: specify the input matrix on the layer.

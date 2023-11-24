@@ -22,6 +22,12 @@ Tensorflow syntax
             tf.keras.layers.Conv2D(filters, kernel, padding, use_bias, strides, activation, input_shape)
     ])
 
+
+another type
+
+    conv_layer = tf.keras.layers.Conv2D(filters, kernel, padding, use_bias, strides, activation)(input_shape)
+
+
 * **filters**: reprsent the number of different type of filters you want to use, and layer will produce diffrent output matrix for each filter.
 * **padding**: "valid"(case-sensitive) for no padding, "same" for zero padding, adds the boarder to the image so the dimesnion of the input and output image will remain same.
 * **use_bias**: take boolean value True or False.

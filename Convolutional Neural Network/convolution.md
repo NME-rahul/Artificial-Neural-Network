@@ -4,6 +4,14 @@ It is same convolution operation used in image processing. The convolutional ope
 
 Convo operation reduces the image dimensions that saves the training time, reduces computation power and complexity of the model. It is denoted by the **"*"**
 
+$$output = \frac{i - k + 2p}{s}$$
+
+* i: input image
+* k: kernel filter size
+* p: padding
+* s: stride movement
+
+---
 
 <p align="center">
   <img src="https://pengfeinie.github.io/images/image-20211017144936783.png" height="" width="" />

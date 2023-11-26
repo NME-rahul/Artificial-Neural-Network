@@ -7,7 +7,7 @@
 * It converts large negative values towards 0 and large positive values towards 1.
 * It returns 0.5 for the input 0. The values 0.5 is know as the threshold value which can decide that given input belongs to what type of two classes.
 
-### Usege:
+### Usage:
 * In the early days, the sigmoid function used as an activation function for the hidden layers in MLPs(Multi Layer Feedforward), CNNs and RNNs.
 * However, the sigmoid function is still used in RNNs.
 * Currently, we do not usually use the sigmoid function for the hidden layers in MLPs and CNNs. instead, we use ReLU or Leaky ReLU there.

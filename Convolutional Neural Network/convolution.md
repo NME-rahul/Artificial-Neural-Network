@@ -43,6 +43,7 @@ $$output Image = \frac{5 - 3 + 0}{1} + 1 = 3$$
 #### The Output image can be formulated as
   
   $$Y = I \circledast K + B$$
+  
   $$\hat{Y} = activation(Y)$$
 
 * **Y**: Output image matrix
@@ -53,12 +54,33 @@ $$output Image = \frac{5 - 3 + 0}{1} + 1 = 3$$
 #### The formula for calculating at a specific position i,j is given by
 
   $$y_{i,j} = \sum_{m=1}^{M} \sum_{n=1}^{N} (P_{i*s+m-1, j * s+n-1} * K_{i,j}) + b$$
-  $$\ha.t y_{i,j} = activation(y_{i,j})$$
+  
+  $$\hat y_{i,j} = activation(y_{i,j})$$
+
+### Error calculation
+
+Generally Binary Cross-Entropy, Categorical Cross-Entropy or Mean Squared Error is used, here we using Binary Cross-Entropy,
+
+$$L(y, \hat{y}) = - y \log(\hat y) - (1-y)\log(1-\hat y)$$
 
 
 ## Backward pass
 
-The updation of weights of kernel matrix aare updated as we update the weights in conventional neural networks.
+The updation of weights of kernel matrix are updated as we update the weights in conventional neural networks.
+
+#### Chain Rule
+
+$$\frac{\partial L(y, \hat y)}{\partial K} = \frac{\partial L(y, \hat y)}{\partial \hat y} * \frac{\partial \hat y}{\partial y} * \frac{\partial y}{\partial K}$$
+
+$$\frac{\partial L(y, \hat y)}{\partial B} = \frac{\partial L(y, \hat y)}{\partial \hat y} * \frac{\partial \hat y}{\partial y} * \frac{\partial y}{\partial B}$$
+
+#### Weight updation
+
+$$K_{new} = K_{old} - \alpha * \frac{\partial L(y, \hat y)}{\partial K}$$
+
+$$B_{new} = B_{old} - \alpha * \frac{\partial L(y, \hat y)}{\partial B}$$
+
+* alpha: learning_rate
 
 ---
 

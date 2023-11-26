@@ -5,7 +5,7 @@
 * Cost function plays a cruical role in understanding that how well your model estimate the relationship between the input and output parameters.
 * different kind of cost function are used for different models to accurately determine the error.
 
-##### Error = target - predicted
+$$Error = target - predicted$$
 
 ## 1. Regression cost function
 Regression models are used to make a prediction for the continious variables such as the weather prediction, loan prediction etc.

@@ -16,7 +16,7 @@ Regression models are used to make a prediction for the continious variables suc
 #### b. Mean squared Error(MSE) -
  It is most comonly used cost function. it improvees the drawbacks of the mean error function because as the name suggested we take sqaure of difference of actual and predicted value so we didn't get any negative value.
 
-$$Error = \frac{1}{N}\sum (predicted - actual)^2$$
+$$Error = \frac{1}{N} \sum (predicted - actual)^2$$
 
  It is also known as L2 loss
 
@@ -32,7 +32,7 @@ $$Error = |predcited - actual|$$
  The commonly used cost function for classification is a cross-entropy loss. Binary classification is a special case of cross-entropy.
  cross-entropy loss is also known as log loss. entropy of a random variable x is the average level of the information.
  
- $$J(y, ŷ) = -frac{1}{N} \sum y_i * \log(\hat y_i)  + (1-y_i) * \log(1 - \hat y_i)$$
+ $$J(y, ŷ) = -\frac{1}{N} [ \sum y_i * \log(\hat y_i)  + (1-y_i) * \log(1 - \hat y_i) ]$$
    
 * ŷ: probability of class 1
 * 1-ŷ: probability of class 0

@@ -30,7 +30,7 @@ Perform sum of products of the kernel's pixels with the coresponding pixels of t
 
 
 <p align="center">
-  <img src="https://private-user-images.githubusercontent.com/100432854/285640585-7061752c-5094-4b05-8b69-50bb25667fbe.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDA5OTA1MjgsIm5iZiI6MTcwMDk5MDIyOCwicGF0aCI6Ii8xMDA0MzI4NTQvMjg1NjQwNTg1LTcwNjE3NTJjLTUwOTQtNGIwNS04YjY5LTUwYmIyNTY2N2ZiZS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMTI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTEyNlQwOTE3MDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MDE1OTNhNDAxNTBlYjE3YTNiZDlkNjdlOGVkY2RjZWMzMjZiNjdmNjc3NDliYjlmMmJiOWU0YjRkMjdjMzMwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.mu-JYIaG_XGuvOMTwaDdYVJw5g4tIQlmol5cow0tEjk" height="300" width="600"/>
+  <img src="https://github.com/NME-rahul/Artificial-Neural-Network/assets/100432854/45d5a8e3-59d6-47ee-95cf-39145cba665a" height="300" width=""/>
 </p>
 
 ## Forward pass
@@ -99,6 +99,6 @@ another type
 * **filters**: reprsent the number of different type of filters you want to use, and layer will produce diffrent output matrix for each filter.
 * **padding**: "valid"(case-sensitive) for no padding, "same" for zero padding, adds the boarder to the image so the dimesnion of the input and output image will remain same.
 * **use_bias**: take boolean value True or False.
-* **stride**: specify the movement steps at once.
+* **strides**: specify the movement steps of filter over image at once.(eg. strides=2 will reduce the size by half)
 * **activation**: specify activation function.
 * **input_shape**: specify input image shape, for first layer only if input layer is not used.

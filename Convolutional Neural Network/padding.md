@@ -4,6 +4,9 @@ If you want to preserve all the pixels of image then padding is used on the imag
 
 $$output = [\frac{i - k + 2p}{s}] + 1$$
 
+<p align="center">
+  <img src="https://github.com/NME-rahul/Artificial-Neural-Network/assets/100432854/0fa0398c-7f44-41dc-b788-6bbbe204c9f3" height="" width=""/>
+</p>
 
 **Why padding?**
 * It removes the boarder problem.

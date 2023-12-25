@@ -22,7 +22,7 @@ $$A = {1, 4, 5, 2, 3}$$
 
 $$\int{2x}{dx} = x^2 + c$$
 
-$$\frac{\mathrm}{\mathrm x}$$
+$$\frac{\partial \mathrm y}{\partial \mathrm x}$$
 
 5. Matrix notation
 

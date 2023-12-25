@@ -29,11 +29,13 @@ $$\frac{\partial \mathrm y}{\partial \mathrm x}$$
 $$A = [1, 2, 3, 4]$$
 
 
-### Tree
+## Tree
 
 Tree-based knwoledge repersentation is a method of structuring and organizing information heirarchy using a tree like structure. This appraoch is particulary used for repersenting heirarchical inforamtion and their relationships and way that is to nevigate and understand. Tree structures are commonly used in computer science, information reterival, linguistic.
 
-![avl tree](https://static.javatpoint.com/ds/images/avl-tree.png)
+<p align="center">
+	<img alt="avl tree" src="https://static.javatpoint.com/ds/images/avl-tree.png" height="400" width="600" />
+</p>
 
 **Repersentation**
 **1. Nodes**
@@ -61,7 +63,7 @@ in some cases, information may be repeated in multiple branches, leading to redu
 Once a tree structure is established, it can be challenging to accommodate new relationships or changes in the knwoledge base without restructring.
 
 
-### Graph
+## Graph
 
 Graph knowledge representation is a method of strcturing and organizing information using a network of nodes and edges, where nodes repersents entites or concepts and edges repersents relationship between them. This approach is highley flexible and versatile, making it suitable for representing complex and interconnected knowledge. Graphs are used in various domains such as AI, database system, social network, and recommendation system.
 
@@ -102,7 +104,7 @@ Integrating data from multiple sources into a single coherent graphs can be chal
 Hadling schema changes or evolving knwoledge representations may require constant adjustments.
 
 
-### Hierarchical
+## Hierarchical
 
 Hierarchical knwoledge representation is a method of organizing and structuring information in a hierarchy or tree-like fashion, where knwoledge is arranged in parent-child relationship. This appraoch is useful for represntting knowledge that shows a clear heirarchy of categories, or concepts. Hierarchical structures are commonly used in various fields, including taxonomy, file systems, organizational charts, and classification systems.
 
@@ -145,7 +147,7 @@ Hierarchical knwoledge representation is a method of organizing and structuring 
 * Redundancy
 
 
-### Frame
+## Frame
 
 A Frame is technique of organizing or arranging data in a structure, which consists of a collection of attributes and its value to describe an entity in the world. It consists of a acollections of slots and slot values. These slots may be of nay type and size. slots have names and values which are callled faccets.
 
@@ -175,7 +177,7 @@ Page	1152
 * Frame representation has a much generalizeed appraoch.
 
 
-### Constraint
+## Constraint
 
 Constraint knowledge representation is the way of organizing and structuring information, particulary in context of constraint statisfaction problems(CSPs) and constraint based reasoning systems. It invloves specifying relationship and restrictions among variables, allowing for the efficient solution of complex problems that involve statifying a set of constraint.
 
@@ -198,7 +200,7 @@ eg. Sudoku: In a sudoku puzzle, each cell is variable wth a domain of numbers fr
 * Flexibility
 * Applicability
 
-### Conceptual dependecy
+## Conceptual dependecy
 
 Conceptual dependency is a knowledge representation framework used to model and represent the sementics of natural language sentences. It was developed in 1970s as part of the filed natural language processing and atificial intelligence. The main idea behind conceptual dependency is, it break down sentences into primitive semantic structures or "conceptual dependency" that capture the essential meaning of the sentences. Each Conceptual dependcy represents a specific sematic relationship or action between concepts.
 
@@ -231,7 +233,7 @@ Agent represents the concept "Ram", who performs action. "ate" represents the ac
 * Integraion with real-world knowledge
 
 
-### Database
+## Database
 
 A database can serve as a knowledge represetation system, particulary when it is used to store, orgnaize and manage structured data. A databse reprsets knwoledge about a particular domain or subject matter. A database act as repository for information retrieval, data analysis and knowledge based systems. A databse is a electronic way of storing data.
 

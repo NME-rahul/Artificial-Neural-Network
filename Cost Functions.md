@@ -11,7 +11,7 @@ $$Error = target - predicted$$
 Regression models are used to make a prediction for the continious variables such as the weather prediction, loan prediction etc.
 
 #### a. Mean of means Error -
- In this type of cost function, the error is calculated for each training data, and then the mean of all error value is taken. The error that occured from the training data can be either negative or positive. while finding mean, they can cancel out each other and the result will the zero for model, so it is not useful function.
+ In this type of cost function, the error is calculated for each training data, and then the mean of all error value is taken. The error that occured from the training data can be either negative or positive. while finding mean, they can cancel out each other and the result will be the zero for model, so it is not useful function.
 
 #### b. Mean squared Error(MSE) -
  It is most comonly used cost function. it improvees the drawbacks of the mean error function because as the name suggested we take sqaure of difference of actual and predicted value so we didn't get any negative value.
